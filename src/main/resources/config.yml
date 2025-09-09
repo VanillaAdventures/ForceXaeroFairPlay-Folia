@@ -6,5 +6,5 @@ defaultMode: fairplay
 # World-specific modes
 # Only add worlds if you want to override default setting.
 worldModes:
-  world_nether: fairplay_nether
-  custom_world: none
+ # world_nether: fairplay_nether
+ # custom_world: none

@@ -52,7 +52,7 @@ public class ForceXaeroFairPlay extends JavaPlugin implements Listener {
 
         StringBuilder messageBuilder = new StringBuilder();
 
-        if (!fromWorldMode.equals(toWorldMode) && (toWorldMode.equals("none") || !toWorldMode.equals("none"))) {
+        if (!fromWorldMode.equals(toWorldMode)) {
             messageBuilder.append("§r§e§s§e§t§x§a§e§r§o ");
         }
 
@@ -62,11 +62,7 @@ public class ForceXaeroFairPlay extends JavaPlugin implements Listener {
                 break;
 
             case "disabled":
-                messageBuilder.append("§f§a§i§r§x§a§e§r§o §n§o§m§i§n§i§m§a§p");
-                break;
-
-            case "fairplay_nether":
-                messageBuilder.append("§f§a§i§r§x§a§e§r§o §x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r");
+                messageBuilder.append("§n§o§m§i§n§i§m§a§p");
                 break;
 
             case "none":
@@ -75,8 +71,13 @@ public class ForceXaeroFairPlay extends JavaPlugin implements Listener {
         }
 
         if (messageBuilder.length() > 0) {
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),
-                    "tellraw " + player.getName() + " \"" + messageBuilder.toString() + "\"");
+            sendTellraw(player, messageBuilder.toString().trim());
         }
+    }
+
+    private void sendTellraw(Player player, String message) {
+        String json = String.format("{\"text\":\"%s\"}", message.replace("\"", "\\\""));
+        Bukkit.dispatchCommand(Bukkit.getConsoleSender(),
+                "tellraw " + player.getName() + " " + json);
     }
 }
