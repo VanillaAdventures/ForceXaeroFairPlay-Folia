@@ -6,7 +6,7 @@
 
     <groupId>com.alfie51m</groupId>
     <artifactId>forcexaerofairplay-velocity</artifactId>
-    <version>2.2.0</version>
+    <version>3.0.0</version>
     <packaging>jar</packaging>
 
     <name>ForceXaeroFairPlay-Velocity</name>
