@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.alfie51m</groupId>
-    <artifactId>forcexaerofairplay</artifactId>
+    <artifactId>forcexaerofairplay-velocity</artifactId>
     <version>2.2.0</version>
     <packaging>jar</packaging>
 
-    <name>forcexaerofairplay</name>
+    <name>ForceXaeroFairPlay-Velocity</name>
+    <description>Force Xaero's Minimap FairPlay mode on Velocity servers</description>
 
     <properties>
         <java.version>21</java.version>
@@ -38,6 +39,14 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <relocations>
+                                <relocation>
+                                    <pattern>org.yaml</pattern>
+                                    <shadedPattern>com.alfie51m.forceXaeroFairPlay.libs.yaml</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -52,8 +61,8 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>velocity</id>
+            <url>https://nexus.velocitypowered.com/repository/maven-public/</url>
         </repository>
         <repository>
             <id>sonatype</id>
@@ -63,10 +72,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.21.8-R0.1-SNAPSHOT</version>
+            <groupId>com.velocitypowered</groupId>
+            <artifactId>velocity-api</artifactId>
+            <version>3.3.0-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.2</version>
         </dependency>
     </dependencies>
 </project>

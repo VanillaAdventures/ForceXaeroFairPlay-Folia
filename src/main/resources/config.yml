@@ -1,10 +1,20 @@
 # Default mode for all players.
-# Options: none, fairplay, fairplay_nether, disabled
-# fairplay_nether enables cave mode in the nether to prevent it showing the bedrock nether roof.
+# Options: none, fairplay, fairplay_nether, disabled, fairplay_disabled, fairplay_nether_disabled
+# none: Only reset (clear all modes)
+# fairplay: Disable cave mode everywhere
+# fairplay_nether: Disable cave mode everywhere except nether (TEMPORARILY NOT WORKING)
+# disabled: Only disable minimap
+# fairplay_disabled: Fairplay + disabled minimap
+# fairplay_nether_disabled: Fairplay nether + disabled minimap (TEMPORARILY NOT WORKING)
 defaultMode: fairplay
 
-# World-specific modes
-# Only add worlds if you want to override default setting.
-worldModes:
- # world_nether: fairplay_nether
- # custom_world: none
+# Enable debug logging
+debug: false
+
+# Server-specific modes
+# Only add servers if you want to override default setting.
+serverModes:
+ # lobby: none
+ # survival: fairplay
+ # creative: disabled
+ # pvp: fairplay_disabled

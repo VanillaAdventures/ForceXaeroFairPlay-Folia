@@ -1,0 +1,9 @@
+{
+  "id": "forcexaerofairplay",
+  "name": "ForceXaeroFairPlay",
+  "version": "${version}",
+  "description": "Force Xaero's Minimap FairPlay mode on Velocity servers",
+  "authors": ["alfie51m", "MrWeez"],
+  "main": "com.alfie51m.forceXaeroFairPlay.ForceXaeroFairPlay",
+  "dependencies": []
+}
