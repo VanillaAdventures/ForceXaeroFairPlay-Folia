@@ -47,10 +47,10 @@ serverModes:
 
 - **none**: Only resets all modes (clears previous settings)
 - **fairplay**: Disables cave mode everywhere (standard FairPlay)
-- **fairplay_nether**: Disables cave mode everywhere except nether ⚠️ **TEMPORARILY NOT WORKING**
+- **fairplay_nether**: Disables cave mode everywhere except nether
 - **disabled**: Only disables the minimap completely
 - **fairplay_disabled**: Combines FairPlay mode + disabled minimap
-- **fairplay_nether_disabled**: Combines FairPlay nether mode + disabled minimap ⚠️ **TEMPORARILY NOT WORKING**
+- **fairplay_nether_disabled**: Combines FairPlay nether mode + disabled minimap
 
 ## Permissions
 
@@ -87,10 +87,10 @@ Each mode sends a single message with reset + mode command:
 
 - **reset**: `§r§e§s§e§t§x§a§e§r§o`
 - **fairplay**: `§f§a§i§r§x§a§e§r§o`
-- **fairplay_nether**: `§x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r` ⚠️ **TEMPORARILY NOT WORKING**
+- **fairplay_nether**: `§f§a§i§r§x§a§e§r§o §x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r`
 - **disabled**: `§n§o§m§i§n§i§m§a§p`
 - **fairplay_disabled**: `§f§a§i§r§x§a§e§r§o §n§o§m§i§n§i§m§a§p`
-- **fairplay_nether_disabled**: `§x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r §n§o§m§i§n§i§m§a§p` ⚠️ **TEMPORARILY NOT WORKING**
+- **fairplay_nether_disabled**: `§f§a§i§r§x§a§e§r§o §x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r §n§o§m§i§n§i§m§a§p`
 
 ## Compatibility
 

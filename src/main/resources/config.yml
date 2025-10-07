@@ -2,10 +2,10 @@
 # Options: none, fairplay, fairplay_nether, disabled, fairplay_disabled, fairplay_nether_disabled
 # none: Only reset (clear all modes)
 # fairplay: Disable cave mode everywhere
-# fairplay_nether: Disable cave mode everywhere except nether (TEMPORARILY NOT WORKING)
+# fairplay_nether: Disable cave mode everywhere except nether
 # disabled: Only disable minimap
 # fairplay_disabled: Fairplay + disabled minimap
-# fairplay_nether_disabled: Fairplay nether + disabled minimap (TEMPORARILY NOT WORKING)
+# fairplay_nether_disabled: Fairplay nether + disabled minimap
 defaultMode: fairplay
 
 # Enable debug logging

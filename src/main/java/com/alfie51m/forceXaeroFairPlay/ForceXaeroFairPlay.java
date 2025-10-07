@@ -139,7 +139,7 @@ public class ForceXaeroFairPlay {
 
             case "fairplay_nether":
                 // Disable cave mode everywhere except nether (temporarily not working)
-                messageBuilder.append("§x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r");
+                messageBuilder.append("§f§a§i§r§x§a§e§r§o §x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r");
                 if (configManager.isDebugEnabled()) {
                     logger.info("Setting fairplay_nether mode for player {} (NOTE: Nether mode temporarily not working)", player.getUsername());
                 }
@@ -163,7 +163,7 @@ public class ForceXaeroFairPlay {
 
             case "fairplay_nether_disabled":
                 // Fairplay nether + disabled minimap (temporarily not working)
-                messageBuilder.append("§x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r §n§o§m§i§n§i§m§a§p");
+                messageBuilder.append("§f§a§i§r§x§a§e§r§o §x§a§e§r§o§w§m§n§e§t§h§e§r§i§s§f§a§i§r §n§o§m§i§n§i§m§a§p");
                 if (configManager.isDebugEnabled()) {
                     logger.info("Setting fairplay_nether + disabled minimap for player {} (NOTE: Nether mode temporarily not working)", player.getUsername());
                 }
